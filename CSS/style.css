@@ -1,0 +1,233 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: 0.2fr 2.6fr 0.2fr;
+  /* grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr; */
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "Carrusel Carrusel Carrusel"
+    ". Servicios ."
+    ". Ofertas ."
+    ". Beneficios ."
+    "Footer Footer Footer";
+}
+
+.header {
+  grid-area: header;
+}
+.Logotipo {
+  width: 60px;
+}
+.Opciones {
+  display: flex;
+  background-color: rgb(125, 137, 239);
+  color: aliceblue;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Opciones li {
+  list-style: none;
+}
+.Opciones a {
+  /* sacar el subrayado */
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+
+.Opciones a:hover {
+  /* cuando pasa el mouse por encima */
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+.Carrusel {
+  grid-area: Carrusel;
+  height: 200px;
+  background-color: aqua;
+}
+
+.Carrusel p {
+  position: relative;
+  top: 70px;
+}
+
+.Servicios {
+  grid-area: Servicios;
+  margin: 20px 0px 10px 0px;
+}
+.CuadrosServicios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.ItemServicios {
+  background-color: rgb(19, 233, 15);
+  width: 250px;
+  height: 60px;
+  border-radius: 20px;
+}
+
+.Ofertas {
+  grid-area: Ofertas;
+  margin: 20px 0px 10px 0px;
+}
+.CuadrosOfertas {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.ItemOfertas {
+  background-color: rgb(15, 59, 233);
+  width: 90%;
+  height: 60px;
+}
+
+.Beneficios {
+  grid-area: Beneficios;
+  margin: 20px 0px 10px 0px;
+}
+.CuadrosBeneficios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.ItemBeneficios {
+  background-color: rgb(233, 15, 193);
+  width: 180px;
+  height: 60px;
+  border-radius: 20px;
+}
+
+.Footer {
+  grid-area: Footer;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 10px;
+  background-color: rgb(144, 251, 251);
+}
+.Footer div {
+  padding: 15px;
+}
+@media (max-width: 864px){
+  .CuadrosServicios {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Opciones a:hover {
+    /* cuando pasa el mouse por encima */
+    color: rgb(249, 54, 0);
+    font-weight: 500;
+  }
+  .ItemServicios {
+    background-color: rgb(193, 233, 15);
+    width: 260px;
+    height: 70px;
+    border-radius: 22px;
+    margin: 15px 0px;
+  }
+  .ItemOfertas {
+    background-color: rgb(234, 34, 184);
+    width: 95%;
+    height: 63px;
+    border-radius: 25px;
+  }
+  .ItemBeneficios {
+    background-color: rgb(57, 95, 232);
+    width: 190px;
+    height: 60px;
+    border-radius: 22px;
+    margin-top:20px;
+  }
+}
+/* Estilos Tablet */
+@media (max-width: 768px) {
+  .Opciones a {
+    padding-left: 10px;
+  }
+  /* .CuadrosServicios {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ItemServicios{
+    margin: 15px 0px;
+  } */
+  .CuadrosOfertas {
+    flex-direction: column;
+    align-items: center;
+  }
+  .CuadrosBeneficios {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ItemBeneficios{
+    margin: 15px 0px;
+  }
+}
+/* Estilos Deskop */
+@media (min-width: 1024px){
+  .Opciones a:hover {
+    /* cuando pasa el mouse por encima */
+    color: rgb(0, 249, 178);
+    font-weight: 500;
+  }
+  .ItemServicios {
+    background-color: rgb(19, 15, 233);
+    width: 260px;
+    height: 70px;
+    border-radius: 22px;
+  }
+  .ItemOfertas {
+    background-color: rgb(234, 71, 34);
+    width: 95%;
+    height: 63px;
+    border-radius: 25px;
+  }
+  .ItemBeneficios {
+    background-color: rgb(154, 230, 159);
+    width: 190px;
+    height: 60px;
+    border-radius: 22px;
+  }
+}
+
+@media (max-width: 420px){
+  .Opciones a:hover {
+    /* cuando pasa el mouse por encima */
+    color: rgb(249, 0, 203);
+    font-weight: 500;
+  }
+  .ItemServicios {
+    background-color: rgb(233, 99, 15);
+    width: 260px;
+    height: 70px;
+    border-radius: 22px;
+  }
+  .ItemOfertas {
+    background-color: rgb(34, 234, 114);
+    width: 95%;
+    height: 63px;
+    border-radius: 25px;
+  }
+  .ItemBeneficios {
+    background-color: rgb(230, 154, 159);
+    width: 190px;
+    height: 60px;
+    border-radius: 22px;
+  }
+}

@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.grilla {
+  display: grid;
+  grid-template-columns: 0.2fr 2.6fr 0.2fr;
+  /* grid-template-rows: 0.4fr 1.6fr 1fr 1fr; */
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    ". Formulario ."
+    ". Formulario ."
+    "Footer Footer Footer";
+}
+
+.header {
+  grid-area: header;
+}
+.Logotipo {
+  width: 60px;
+}
+.Opciones {
+  display: flex;
+  background-color: rgb(125, 137, 239);
+  color: aliceblue;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Opciones li {
+  list-style: none;
+}
+.Opciones a {
+  /* sacar el subrayado */
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+
+.Opciones a:hover {
+  /* cuando pasa el mouse por encima */
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+.Formulario {
+  grid-area: Formulario;
+}
+
+.Footer {
+  grid-area: Footer;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 10px;
+  background-color: rgb(144, 251, 251);
+}
+.Footer div {
+  padding: 15px;
+}
+.realtive{
+  margin-bottom: 10px;
+}
+
+@media (max-width: 864px){
+  .Opciones a {
+    padding: 5px;
+  }
+  .relative{
+    margin-bottom: 15px;
+  }
+}
+/* Estilos Tablet */
+@media (max-width: 768px) {
+  .Footer{
+    background-color: blanchedalmond;
+  }
+}
+/* Estilos Deskop */
+@media (min-width: 1024px){
+  .relative{
+    margin-bottom: 15px;
+  }
+  .Opciones a:hover {
+    /* cuando pasa el mouse por encima */
+    color: rgb(247, 12, 200);
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 420px){
+  .Opciones a {
+    padding: 10px;
+  }
+  .Opciones a:hover {
+    /* cuando pasa el mouse por encima */
+    color: rgb(247, 12, 12);
+    font-weight: 400;
+  }
+}
