@@ -19,7 +19,11 @@
   grid-area: header;
 }
 .Logotipo {
-  width: 60px;
+  width: 50px;
+  margin: 0 auto;
+}
+.bg-light{
+  background-color: white !important;
 }
 .Opciones {
   display: flex;
@@ -27,6 +31,7 @@
   color: aliceblue;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 0;
 }
 
 .Opciones li {
@@ -83,6 +88,16 @@
   flex-wrap: wrap;
   align-items: flex-start;
   padding-top: 10px;
+  background-color: aqua;
+}
+.card{
+  height: 20px;
+}
+.card-body{
+  flex: 1 0 0%;
+}
+.card-group{
+  width: 100%;
 }
 
 .relative{

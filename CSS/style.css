@@ -22,7 +22,8 @@
   grid-area: header;
 }
 .Logotipo {
-  width: 60px;
+  width: 50px;
+  margin: 0 auto;
 }
 .bg-light{
   background-color: white !important;
@@ -33,6 +34,7 @@
   color: aliceblue;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 0;
 }
 
 .Opciones li {
@@ -140,7 +142,16 @@
   /* asigna el keyframe */
 }
 .Footer div {
-  padding: 15px;
+  padding: 15px ;
+}
+.card{
+  height: 15px;
+}
+.card-body{
+  flex: 1 0 0%;
+}
+.card-group{
+  width: 100%;
 }
 @media (max-width: 864px){
   .CuadrosServicios {
