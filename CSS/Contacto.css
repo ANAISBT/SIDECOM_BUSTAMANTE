@@ -21,6 +21,9 @@
 .Logotipo {
   width: 60px;
 }
+.bg-light{
+  background-color: white !important;
+}
 .Opciones {
   display: flex;
   background-color: rgb(125, 137, 239);
@@ -109,41 +112,12 @@
   align-items: flex-start;
   padding-top: 10px;
   background-color: rgb(144, 251, 251);
-  /* asigna el keyframe */
-  animation-name: footerEnMovimiento;
-  /*duración de la animación*/
-  animation-duration: 5s;
+
 }
 .Footer div {
   padding: 15px;
 }
-@keyframes footerEnMovimiento {
-  /* tiempo al 0% */
-  0% {
-    background-color:aquamarine;
-  }
-  /* tiempo al 15% */
-  15% {
-    width: 15%;
-    background-color:azure;
-  }
-  25% {
-    width: 25%;
-    background-color:aqua;
-  }
-  50% {
-    width: 50%;
-    background-color:aquamarine;
-  }
-  75% {
-    width: 75%px;
-    background-color:azure;
-  }
-  100% {
-    width: 100%;
-    background-color:aqua;
-  }
-}
+
 .relative{
   margin-bottom: 15px;
   width: 200px;

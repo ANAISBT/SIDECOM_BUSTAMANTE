@@ -8,15 +8,25 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./CSS/style.css">
     <title>SIDECOM</title>
   </head>
   <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <div class="grilla">
       <div class="header">
-        <div class="Logo">
-            <a href="./index.html"><img class="Logotipo" src="./IMG/LOGO.png" alt="logoSidecom"></a>
-        </div class="Scroll">
+        <nav class="navbar bg-light Logo">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img class="Logotipo" src="./IMG/LOGO.png" alt="logoSidecom"></a>
+            </div>
+          </nav>
+        <div>
             <ul class="Opciones">
                 <li><a href="./ESCOLAR.html">UTILES ESCOLARES</a></li>
                 <li><a href="./OFICINA.html">UTILES DE OFICINA</a></li>
@@ -26,11 +36,33 @@
                 <li><a href="./REGALOS.html">REGALOS</a></li>
                 <li><a href="./CONTACTO.html">CONTACTO</a></li>
             </ul>
+        </div>
       </div>
-      <div class="Carrusel">
-        <center>
-            <p>AQUI IRÁ LAS IMAGENES EN MOVIMIENTOS</p>
-        </center>
+      <div id="carouselExampleIndicators" class="Carrusel carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="https://www.semana.com/resizer/M3lHzFH9yToCBrq4WG81xzPVt5U=/1200x646/filters:format(jpg):quality(50)/cloudfront-us-east-1.images.arcpublishing.com/semana/EQANV7QSLZFF3FRY7EOTXDBAPM.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item active">
+            <img src="https://www.bbva.com/wp-content/uploads/2019/08/Regreso-a-clases-BBVA-Mexico--1920x1080.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://lumen.com.mx/Content/Images/uploaded/Wacom/2021-A/2021-B/Lista-de-utiles-escolares-sugerida-por-la-SEP.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
       <div class="Servicios">
         <center><h2 class="wow animate_animated animate__bounceIn">SERVICIOS</h2>

@@ -24,6 +24,9 @@
 .Logotipo {
   width: 60px;
 }
+.bg-light{
+  background-color: white !important;
+}
 .Opciones {
   display: flex;
   background-color: rgb(125, 137, 239);
@@ -49,13 +52,9 @@
 }
 .Carrusel {
   grid-area: Carrusel;
-  height: 200px;
-  background-color: aqua;
 }
-
-.Carrusel p {
-  position: relative;
-  top: 70px;
+.carousel-item img{
+  height: 360px;
 }
 
 .Servicios {
@@ -139,41 +138,9 @@
   padding-top: 10px;
   background-color: rgb(144, 251, 251);
   /* asigna el keyframe */
-  animation-name: footerEnMovimiento;
-  /*duración de la animación*/
-  animation-duration: 5s;
-  /*repite de manera infinita*/
-  /* animation-iteration-count: infinite; */
 }
 .Footer div {
   padding: 15px;
-}
-@keyframes footerEnMovimiento {
-  /* tiempo al 0% */
-  0% {
-    background-color:aquamarine;
-  }
-  /* tiempo al 15% */
-  15% {
-    width: 15%;
-    background-color:azure;
-  }
-  25% {
-    width: 25%;
-    background-color:aqua;
-  }
-  50% {
-    width: 50%;
-    background-color:aquamarine;
-  }
-  75% {
-    width: 75%px;
-    background-color:azure;
-  }
-  100% {
-    width: 100%;
-    background-color:aqua;
-  }
 }
 @media (max-width: 864px){
   .CuadrosServicios {
