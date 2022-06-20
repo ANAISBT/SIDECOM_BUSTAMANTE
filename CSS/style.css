@@ -2,37 +2,20 @@
   margin: 0px;
   padding: 0px;
 }
-
-.grilla {
-  display: grid;
-  grid-template-columns: 0.2fr 2.6fr 0.2fr;
-  /* grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr; */
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "header header header"
-    "Carrusel Carrusel Carrusel"
-    ". Servicios ."
-    ". Ofertas ."
-    ". Beneficios ."
-    "Footer Footer Footer";
-}
-
-.header {
-  grid-area: header;
-}
 .Logotipo {
-  width: 60px;
+  width: 50px;
+  margin: 0 auto;
 }
 .bg-light{
   background-color: white !important;
 }
 .Opciones {
   display: flex;
-  background-color: rgb(125, 137, 239);
+  background-color: rgb(45, 35, 120);
   color: aliceblue;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 0;
 }
 
 .Opciones li {
@@ -47,18 +30,20 @@
 
 .Opciones a:hover {
   /* cuando pasa el mouse por encima */
-  color: rgb(255, 255, 255);
+  color: rgb(239, 243, 8);
   font-weight: 400;
 }
-.Carrusel {
-  grid-area: Carrusel;
+.Opciones a:visited {
+  /* cuando pasa el mouse por encima */
+  color: rgb(245, 245, 245);
+  font-weight: 400;
 }
+
 .carousel-item img{
-  height: 360px;
+  height: 400px;
 }
 
 .Servicios {
-  grid-area: Servicios;
   margin: 20px 0px 10px 0px;
 }
 .Servicios h2{
@@ -73,24 +58,48 @@
 
 .ItemServicios {
   background-color: rgb(19, 233, 15);
-  width: 250px;
-  height: 60px;
+  width: 300px;
+  height: 70px;
   border-radius: 20px;
+  display: flex;
+  flex-direction: row;
 }
-
-.CuadrosServicios div :hover {
-  transform: scale(1.2);
-  padding: 10px;
+.block-Escolar{
+  padding:0 12px;
+  width: 100%;
+}
+.esc-sm-col-8 img{
+  height:200px;
+}
+.esc-sm-col-4{
+  margin: 0 5px;
+  background-color:rgb(238, 238, 238);
+}
+.esc-sm-col-4 img{
+  height:400px;
+}
+.separador img{
+  max-width: 100%;
+}
+.casa{
+ font-size: 15px;
+ padding: 11px;
+}
+.Izipay{
+  font-size: 13px;
+  padding: 11px;
+}
+.Atencion{
+  font-size: 20px;
+  padding: 16px;
 }
 
 .Ofertas {
-  grid-area: Ofertas;
   margin: 20px 0px 10px 0px;
 }
-.CuadrosOfertas {
+
+.esc-row{
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
 }
@@ -106,146 +115,45 @@
   height: 60px;
 }
 
-.Beneficios {
-  grid-area: Beneficios;
-  margin: 20px 0px 10px 0px;
-}
-.CuadrosBeneficios {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.CuadrosBeneficios div :hover {
-  transform: scale(1.2);
-  padding: 10px;
-}
-
-.ItemBeneficios {
-  background-color: rgb(233, 15, 193);
-  width: 180px;
-  height: 60px;
-  border-radius: 20px;
-}
-
 .Footer {
-  grid-area: Footer;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: flex-start;
   padding-top: 10px;
-  background-color: rgb(144, 251, 251);
   /* asigna el keyframe */
+  font-family: 'Times New Roman', Times, serif;
 }
 .Footer div {
-  padding: 15px;
+  padding: 8px ;
 }
-@media (max-width: 864px){
-  .CuadrosServicios {
-    flex-direction: column;
-    align-items: center;
-  }
-  .Opciones a:hover {
-    /* cuando pasa el mouse por encima */
-    color: rgb(249, 54, 0);
-    font-weight: 500;
-  }
-  .ItemServicios {
-    background-color: rgb(193, 233, 15);
-    width: 260px;
-    height: 70px;
-    border-radius: 22px;
-    margin: 15px 0px;
-  }
-  .ItemOfertas {
-    background-color: rgb(234, 34, 184);
-    width: 95%;
-    height: 63px;
-    border-radius: 25px;
-  }
-  .ItemBeneficios {
-    background-color: rgb(57, 95, 232);
-    width: 190px;
-    height: 60px;
-    border-radius: 22px;
-    margin-top:20px;
-  }
+.row{
+  align-items: center;
 }
-/* Estilos Tablet */
-@media (max-width: 768px) {
-  .Opciones a {
-    padding-left: 10px;
-  }
-  /* .CuadrosServicios {
-    flex-direction: column;
-    align-items: center;
-  }
-  .ItemServicios{
-    margin: 15px 0px;
-  } */
-  .CuadrosOfertas {
-    flex-direction: column;
-    align-items: center;
-  }
-  .CuadrosBeneficios {
-    flex-direction: column;
-    align-items: center;
-  }
-  .ItemBeneficios{
-    margin: 15px 0px;
-  }
-}
-/* Estilos Deskop */
-@media (min-width: 1024px){
-  .Opciones a:hover {
-    /* cuando pasa el mouse por encima */
-    color: rgb(0, 249, 178);
-    font-weight: 500;
-  }
-  .ItemServicios {
-    background-color: rgb(19, 15, 233);
-    width: 260px;
-    height: 70px;
-    border-radius: 22px;
-  }
-  .ItemOfertas {
-    background-color: rgb(234, 71, 34);
-    width: 95%;
-    height: 63px;
-    border-radius: 25px;
-  }
-  .ItemBeneficios {
-    background-color: rgb(154, 230, 159);
-    width: 190px;
-    height: 60px;
-    border-radius: 22px;
-  }
+.TablaFormulario{
+  background-color: rgb(65, 62, 162);
+  color: aliceblue;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 15px 0px;
+  border-radius: 10px;
 }
 
-@media (max-width: 420px){
-  .Opciones a:hover {
-    /* cuando pasa el mouse por encima */
-    color: rgb(249, 0, 203);
-    font-weight: 500;
-  }
-  .ItemServicios {
-    background-color: rgb(233, 99, 15);
-    width: 260px;
-    height: 70px;
-    border-radius: 22px;
-  }
-  .ItemOfertas {
-    background-color: rgb(34, 234, 114);
-    width: 95%;
-    height: 63px;
-    border-radius: 25px;
-  }
-  .ItemBeneficios {
-    background-color: rgb(230, 154, 159);
-    width: 190px;
-    height: 60px;
-    border-radius: 22px;
-  }
+/* Pantallas extra pequeñas */
+@media (max-width: 576px){
+  
 }
+/* Pantallas pequeñas(_sm) */
+@media (min-width: 576px) {
+  
+}
+/* Pantallas Medianas(md) */
+@media (min-width: 768px){
+
+}
+/* Pantallas Grandes(lg) */
+@media (min-width: 992px){
+  
+}
+/* Pantallas Extra Largas(xl) */
+@media (min-width: 992px){
+  
+}
+

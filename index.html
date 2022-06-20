@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -14,137 +14,338 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./CSS/style.css">
+    <script
+      src="https://kit.fontawesome.com/e9c9a86b22.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./CSS/style.css" />
     <title>SIDECOM</title>
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
     <div class="grilla">
       <div class="header">
-        <nav class="navbar bg-light Logo">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"><img class="Logotipo" src="./IMG/LOGO.png" alt="logoSidecom"></a>
+        <!-- MENU DE OPCIONES -->
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"
+              ><img class="Logotipo" src="./IMG/LOGO.png" alt="logoSidecom"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./CONTACTO.html">Contactanos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Categorias
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="./ESCOLAR.html"
+                        >Utiles Escolares</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./REGALOS.html">Regalos</a>
+                    </li>
+                    <!-- <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                  </ul>
+                </li>
+              </ul>
             </div>
-          </nav>
+          </div>
+        </nav>
         <div>
-            <ul class="Opciones">
-                <li><a href="./ESCOLAR.html">UTILES ESCOLARES</a></li>
-                <li><a href="./OFICINA.html">UTILES DE OFICINA</a></li>
-                <li><a href="./COMPUTO.html">COMPUTO</a></li>
-                <li><a href="./DIDACTICOS.html">JUEGOS DIDACTICOS</a></li>
-                <li><a href="./LIMPIEZA.html">PRODUCTOS DE LIMPIEZA</a></li>
-                <li><a href="./REGALOS.html">REGALOS</a></li>
-                <li><a href="./CONTACTO.html">CONTACTO</a></li>
-            </ul>
+          <!-- OPCIONES -->
+          <ul class="Opciones">
+            <li><a href="./ESCOLAR.html">UTILES ESCOLARES</a></li>
+            <li><a href="./REGALOS.html">REGALOS</a></li>
+            <li><a href="./CONTACTO.html">CONTACTO</a></li>
+          </ul>
         </div>
       </div>
-      <div id="carouselExampleIndicators" class="Carrusel carousel slide" data-bs-ride="true">
+      <!-- CARRUSEL -->
+      <div
+        id="carouselExampleIndicators"
+        class="Carrusel carousel slide"
+        data-bs-ride="true"
+      >
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item">
-            <img src="https://www.semana.com/resizer/M3lHzFH9yToCBrq4WG81xzPVt5U=/1200x646/filters:format(jpg):quality(50)/cloudfront-us-east-1.images.arcpublishing.com/semana/EQANV7QSLZFF3FRY7EOTXDBAPM.jpg" class="d-block w-100" alt="...">
+            <img
+              src="https://www.semana.com/resizer/M3lHzFH9yToCBrq4WG81xzPVt5U=/1200x646/filters:format(jpg):quality(50)/cloudfront-us-east-1.images.arcpublishing.com/semana/EQANV7QSLZFF3FRY7EOTXDBAPM.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
           </div>
           <div class="carousel-item active">
-            <img src="https://www.bbva.com/wp-content/uploads/2019/08/Regreso-a-clases-BBVA-Mexico--1920x1080.jpg" class="d-block w-100" alt="...">
+            <img
+              src="https://www.bbva.com/wp-content/uploads/2019/08/Regreso-a-clases-BBVA-Mexico--1920x1080.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
           </div>
           <div class="carousel-item">
-            <img src="https://lumen.com.mx/Content/Images/uploaded/Wacom/2021-A/2021-B/Lista-de-utiles-escolares-sugerida-por-la-SEP.jpg" class="d-block w-100" alt="...">
+            <img
+              src="https://lumen.com.mx/Content/Images/uploaded/Wacom/2021-A/2021-B/Lista-de-utiles-escolares-sugerida-por-la-SEP.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
       <div class="Servicios">
-        <center><h2 class="wow animate_animated animate__bounceIn">SERVICIOS</h2>
-            <br>
-            <section class="CuadrosServicios">
-                <div class="ItemServicios">
-                    <p>Imagen<br>Descripción</p>
-                </div>
-                <div class="ItemServicios">
-                    <p>Imagen<br>Descripción</p>
-                </div>
-                <div class="ItemServicios">
-                    <p>Imagen<br>Descripción</p>
-                </div>
-            </section>
-        </center>
+        <div class="separador">
+          <img title="separadorServicios" src="./IMG/SERVICIOS.png" />
+        </div>
+        <div class="container">
+          <section class="CuadrosServicios row">
+            <div class="ItemServicios">
+              <img
+                title="casa"
+                src="https://cdn-icons-png.flaticon.com/512/1670/1670080.png"
+              />
+              <p class="casa">Compra y retira de tienda GRATIS</p>
+            </div>
+            <div class="ItemServicios">
+              <img
+                title="IZIPAY"
+                src="https://ventas.interbank.pe/documents/20182/9332578/recurso-2.png/a274dd9c-41cf-4387-a3af-a17b542a03e5?t=1598284929514"
+              />
+              <p class="Izipay">
+                Aceptamos todo tipo de tarjetas u otros metodos de pago
+              </p>
+            </div>
+            <div class="ItemServicios">
+              <img
+                title="Atención"
+                src="https://cdn-icons-png.flaticon.com/512/2016/2016267.png"
+              />
+              <p class="Atencion">Atención al cliente</p>
+            </div>
+          </section>
+        </div>
       </div>
       <div class="Ofertas">
-        <center><h2 class="wow animate_animated animate__bounceIn">OFERTAS</h2>
-            <br>
-            <section class="CuadrosOfertas">
-                <div class="ItemOfertas">
-                    <p>Imagen<br>Descripción</p>
+        <div class="separador">
+          <a href="./ESCOLAR.html">
+            <img title="separadorEscolar" src="./IMG/utiles escolares.png"/>
+          </a>
+        </div>
+        <section class="block-Escolar">
+          <div class="container container-fluid">
+            <div class="esc-row">
+              <div class="esc-sm-col-4">
+                <img
+                  title="calculadora"
+                  src=" https://cdn.pixabay.com/photo/2016/07/29/21/42/school-1555910__340.png"
+                />
+              </div>
+              <div class="esc-sm-col-8">
+                <div class="esc-row">
+                  <div class="esc-col-6 columna-1-sec-1">
+                    <img
+                      title="lapices"
+                      src=" https://cdn.pixabay.com/photo/2015/05/11/14/44/pencils-762555__340.jpg"
+                    />
+                  </div>
+                  <div class="esc-col-6 columna-1">
+                    <img
+                      title="tijeras"
+                      src=" https://cdn.pixabay.com/photo/2017/08/28/17/36/school-supplies-2690530__340.jpg"
+                    />
+                  </div>
                 </div>
-                <br>
-                <div class="ItemOfertas">
-                    <p>Imagen<br>Descripción</p>
+                <div class="esc-row">
+                  <div class="esc-col-6 columna-1-sec-1">
+                    <img
+                      title="acuarelas"
+                      src="https://cdn.pixabay.com/photo/2016/08/09/21/09/school-supplies-1581760__340.jpg"
+                    />
+                  </div>
+                  <div class="esc-col-6 columna-1">
+                    <img
+                      title="arquitectura"
+                      src=" https://cdn.pixabay.com/photo/2020/09/18/21/52/architecture-5583021__340.jpg"
+                    />
+                  </div>
                 </div>
-                <br>
-                <div class="ItemOfertas">
-                    <p>Imagen<br>Descripción</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="separador">
+          <a href="./REGALOS.html"
+            ><img title="separadorEscolarRegalos" src="./IMG/REGALOS.png"
+          /></a>
+        </div>
+        <section class="block-Escolar">
+          <div class="container container-fluid">
+            <div class="esc-row">
+              <div class="esc-sm-col-8">
+                <div class="esc-row">
+                  <div class="esc-col-6 columna-1-sec-1">
+                    <img
+                      title="corazon"
+                      src=" https://cdn.pixabay.com/photo/2013/07/13/12/19/chocolate-159631__340.png"
+                    />
+                  </div>
+                  <div class="esc-col-6 columna-1">
+                    <img
+                      title="rosaas"
+                      src=" https://cdn.pixabay.com/photo/2018/01/09/22/51/roses-3072698__340.jpg"
+                    />
+                  </div>
                 </div>
-            </section>
-        </center>
-      </div>
-      <div class="Beneficios">
-        <center><h2 class="wow animate_animated animate__bounceIn">BENEFICIOS</h2>
-            <br>
-            <section class="CuadrosBeneficios">
-                <div class="ItemBeneficios">
-                    <p>Imagen<br>Descripción</p>
+                <div class="esc-row">
+                  <div class="esc-col-6 columna-1-sec-1">
+                    <img
+                      title="dia del padre"
+                      src="https://media.istockphoto.com/photos/young-happy-adult-indian-man-opening-parcel-box-at-home-on-the-couch-picture-id1319790605?b=1&k=20&m=1319790605&s=170667a&w=0&h=W9PP8JK1nJGAk_R2bSUz4dEWIjFOkYNMN-YygiNwDsQ="
+                    />
+                  </div>
+                  <div class="esc-col-6 columna-1">
+                    <img
+                      title="dia de la madre"
+                      src="https://media.istockphoto.com/photos/excited-girl-bringing-a-mothers-day-gift-picture-id1347322000?b=1&k=20&m=1347322000&s=170667a&w=0&h=ZBFzhJahK2ogKcJTJ4U5_RuL_llP4jUb0JDrObS9sGc="
+                    />
+                  </div>
                 </div>
-                <div class="ItemBeneficios">
-                    <p>Imagen<br>Descripción</p>
-                </div>
-                <div class="ItemBeneficios">
-                    <p>Imagen<br>Descripción</p>
-                </div>
-                <div class="ItemBeneficios">
-                    <p>Imagen<br>Descripción</p>
-                </div>
-            </section>
-        </center>
+              </div>
+              <div class="esc-sm-col-4">
+                <img
+                  title="mujer"
+                  src=" https://media.istockphoto.com/photos/full-length-of-a-beautiful-young-woman-picture-id1327052528?b=1&k=20&m=1327052528&s=170667a&w=0&h=onOaX6KrlZAL6QkL7u0350I3WZy152fdvlxElG-k1C0="
+                />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
       <div class="Footer">
-        <div>
-            <table>
-                <tr><th>Acerca de SIDECOM</th></tr>
-                <tr><td>Nuestra Historia</td></tr>
-                <tr><td>Nuestros Valores</td></tr>
-            </table>
-        </div>
-        <div>
-            <table>
-                <tr><th>DELIVERY</th></tr>
-                <tr><td>Tiempos y Costos de Envio</td></tr>
-                <tr><td>Cambios y Devoluciones</td></tr>
-            </table>
-        </div>
-        <div>
-            <table>
-                <tr><th>Servicio al Cliente</th></tr>
-                <tr><td>Contactanos</td></tr>
-                <tr><td>Comprobantes Electrónicos</td></tr>
-                <tr><td>Legales <br>Promocionales</td></tr>
-            </table>
+        <div class="container">
+          <div class="row filaFooter">
+            <div class="col">
+              <table class="TablaFormulario">
+                <tr>
+                  <th>Acerca de SIDECOM</th>
+                </tr>
+                <tr>
+                  <td>Nuestra Historia</td>
+                </tr>
+                <tr>
+                  <td>Nuestros Valores</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col">
+              <table class="TablaFormulario">
+                <tr>
+                  <th>DELIVERY</th>
+                </tr>
+                <tr>
+                  <td>Tiempos y Costos de Envio</td>
+                </tr>
+                <tr>
+                  <td>Cambios y Devoluciones</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col">
+              <table class="TablaFormulario">
+                <tr>
+                  <th>Servicio al Cliente</th>
+                </tr>
+                <tr>
+                  <td>Contactanos</td>
+                </tr>
+                <tr>
+                  <td>Comprobantes Electrónicos</td>
+                </tr>
+                <tr>
+                  <td>Legales <br />Promocionales</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <script src="JS/wow.js"></script>
-              <script>
-              new WOW().init();
-              </script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
