@@ -138,21 +138,140 @@
 
 /* Pantallas extra pequeñas */
 @media (max-width: 576px){
-  
+  .Opciones{
+    max-width: 576px;
+    justify-content: center;
+    width:100%;
+  }
+  .Opciones a{
+    font-size: 13px;
+    margin-right: 5px;
+  }
+  .ItemServicios {
+    margin: 10px;
+  }
+  .carousel-item img{
+    height: 300px;
+    width: 250px;
+  }
+  .esc-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin:15px;
+  }
+  .esc-col-6 columna-1-sec-1{
+    margin:10px;
+  }
+  .esc-sm-col-4 img {
+    height: 282px;
+}
+.ark{
+  margin-top: 15px;
+}
+.mama{
+  margin-top: 15px;
+}
+.TablaFormulario {
+  background-color: rgb(65, 62, 162);
+  color: aliceblue;
+  display: flex;
+  align-content: center;
+  padding: 2px 74px;
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 }
 /* Pantallas pequeñas(_sm) */
 @media (min-width: 576px) {
-  
+  .Opciones{
+    max-width: 576px;
+    justify-content: center;
+  }
+  .Opciones a{
+    font-size: 13px;
+    margin-right: 5px;
+  }
+  .ItemServicios {
+    margin: 10px;
+  }
+  .carousel-item img{
+    height: 300px;
+    width: 250px;
+  }
+  .esc-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin:15px;
+  }
+  .esc-col-6 columna-1-sec-1{
+    margin:10px;
+  }
+  .esc-sm-col-4 img {
+    height: 282px;
+}
+.ark{
+  margin-top: 15px;
+}
+.mama{
+  margin-top: 15px;
+}
+.TablaFormulario {
+  background-color: rgb(65, 62, 162);
+  color: aliceblue;
+  display: flex;
+  align-content: center;
+  padding: 2px 74px;
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 }
 /* Pantallas Medianas(md) */
 @media (min-width: 768px){
-
+  .Opciones{
+    max-width: 768px;
+  }
 }
 /* Pantallas Grandes(lg) */
 @media (min-width: 992px){
-  
+  .Opciones{
+    max-width: 992px;
+  }
+  .Opciones a {
+    margin-right: 54px;
+}
+.ItemServicios {
+  margin: 19px;
+}
+.TablaFormulario {
+  padding: 7px 111px;
+}
 }
 /* Pantallas Extra Largas(xl) */
 @media (min-width: 992px){
-  
+  .Opciones{
+    max-width: 992px;
+  }
+  .Opciones a {
+    margin-right: 54px;
+}
+.ItemServicios {
+  margin: 19px;
+}
+.TablaFormulario {
+  padding: 7px 111px;
+}
 }

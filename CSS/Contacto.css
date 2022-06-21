@@ -129,24 +129,26 @@
   margin-bottom: 15px;
   width: 200px;
 }
-
-/* Pantallas extra pequeñas */
-@media (max-width: 576px){
-  
+.shadow{
+  box-shadow: 0px 10px 25px -1px rgba(48, 48, 48, 0.61);
+  background-color: whitesmoke;   
+  padding: 2rem;
+  border-radius: 2rem;
+  margin: 2rem;
 }
-/* Pantallas pequeñas(_sm) */
+@media (min-width:576px ) {
+  .shadow{
+    margin: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .TablaFormulario{
+ padding: 15px;
+  }
+}
 @media (min-width: 576px) {
-  
-}
-/* Pantallas Medianas(md) */
-@media (min-width: 768px){
-
-}
-/* Pantallas Grandes(lg) */
-@media (min-width: 992px){
-  
-}
-/* Pantallas Extra Largas(xl) */
-@media (min-width: 992px){
-  
+.TablaFormulario{
+ padding: 15px;
+  }
 }

@@ -92,21 +92,37 @@
 
 /* Pantallas extra pequeñas */
 @media (max-width: 576px){
-  
+  .utilesElem div{
+    height: 361px;
+    width:374px;
+  }
 }
 /* Pantallas pequeñas(_sm) */
 @media (min-width: 576px) {
-  
+  .utilesElem div{
+    height: 361px;
+    width:374px;
+  }
 }
 /* Pantallas Medianas(md) */
 @media (min-width: 768px){
-
+  .utilesElem div{
+    height: 361px;
+    width:394px;
+  }
 }
 /* Pantallas Grandes(lg) */
 @media (min-width: 992px){
-  
+  .utilesElem div{
+    height: 361px;
+    width:414px;
+  }
 }
 /* Pantallas Extra Largas(xl) */
 @media (min-width: 992px){
-  
+  .utilesElem div{
+    height: 361px;
+    width:474px;
+  }
+
 }
