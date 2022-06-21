@@ -15,67 +15,83 @@
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <div class="grilla">
-      <div class="header">
-        <!-- MENU DE OPCIONES -->
-        <nav class="navbar navbar-expand-lg bg-light">
-          <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html"><img class="Logotipo" src="./IMG/LOGO.png" alt="logoSidecom"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+    <!-- MENU DE OPCIONES -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img class="Logotipo" src="./IMG/LOGO.png" alt="logoSidecom"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./CONTACTO.html">Contactanos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categorias
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./ESCOLAR.html"
+                    >Utiles Escolares</a
+                  >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./CONTACTO.html">Contactanos</a>
+                <li>
+                  <a class="dropdown-item" href="./REGALOS.html">Regalos</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Categorias
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="./ESCOLAR.html">Utiles Escolares</a></li>
-                    <li><a class="dropdown-item" href="./OFICINA.html">Utiles de Oficina</a></li>
-                    <li><a class="dropdown-item" href="./COMPUTO.html">Computo</a></li>
-                    <li><a class="dropdown-item" href="./DIDACTICOS.html">Juegos Didacticos</a></li>
-                    <li><a class="dropdown-item" href="./LIMPIEZA.html">Productos de Limpieza</a></li>
-                    <li><a class="dropdown-item" href="./REGALOS.html">Regalos</a></li>
-                    <!-- <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                  </ul>
+                <li>
+                  <a class="dropdown-item" href="./COMPUTO.html">Computo</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./DIDACTICOS.html"
+                    >Didacticos</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./LIMPIEZA.html"
+                    >Limpieza</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./OFICINA.html">Oficina</a>
                 </li>
               </ul>
-            </div>
-          </div>
-        </nav>
-            <ul class="Opciones">
-                <li><a href="./ESCOLAR.html">UTILES ESCOLARES</a></li>
-                <li><a href="./OFICINA.html">UTILES DE OFICINA</a></li>
-                <li><a href="./COMPUTO.html">COMPUTO</a></li>
-                <li><a href="./DIDACTICOS.html">JUEGOS DIDACTICOS</a></li>
-                <li><a href="./LIMPIEZA.html">PRODUCTOS DE LIMPIEZA</a></li>
-                <li><a href="./REGALOS.html">REGALOS</a></li>
-                <li><a href="./CONTACTO.html">CONTACTO</a></li>
-            </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="Formulario">
-          <center>
-        <div>
+    </nav>
+    <ul class="Opciones">
+      <li><a href="./ESCOLAR.html">UTILES ESCOLARES</a></li>
+      <li><a href="./REGALOS.html">REGALOS</a></li>
+      <li><a href="./COMPUTO.html">COMPUTO</a></li>
+      <li><a href="./DIDACTICOS.html">DIDACTICOS</a></li>
+      <li><a href="./LIMPIEZA.html">LIMPIEZA</a></li>
+      <li><a href="./OFICINA.html">OFICINA</a></li>
+      <li><a href="./CONTACTO.html">CONTACTO</a></li>
+    </ul>
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+        </div>
+        <div class="Formulario col-8">
+          <div>
             <br>
             <h2>Formulario de Contacto</h2>
         </div>
         <br>
-            <h4>Escribenos y nos pondremos en contacto contigo</h4>
+            <center><h4>Escribenos y nos pondremos en contacto contigo</h4></center>
             <br>
             <form action="index.html" method="GET" class="form">
            <p>
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" placeholder="Escribe tu nombre" value required>
            </p>
-
            <p>
             <label for="correo">Correo Electrónico</label>
             <input type="email" id="correo" placeholder="Escribe tu correo" value required>
@@ -94,51 +110,55 @@
            <br>
         </form>
         </div>
-    </center>
+        <div class="col-2">
+        </div>
+      </div>
+    </div>
     <div class="Footer">
-      <div class="card-group">
-        <div class="card-body">
-          <table>
-            <tr>
-              <th>Acerca de SIDECOM</th>
-            </tr>
-            <tr>
-              <td>Nuestra Historia</td>
-            </tr>
-            <tr>
-              <td>Nuestros Valores</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="card-body">
-          <table>
-            <tr>
-              <th>DELIVERY</th>
-            </tr>
-            <tr>
-              <td>Tiempos y Costos de Envio</td>
-            </tr>
-            <tr>
-              <td>Cambios y Devoluciones</td>
-            </tr>
-          </table>
-        </div>
-        <div class="card-body">
-          <table>
-            <tr>
-              <th>Servicio al Cliente</th>
-            </tr>
-            <tr>
-              <td>Contactanos</td>
-            </tr>
-            <tr>
-              <td>Comprobantes Electrónicos</td>
-            </tr>
-            <tr>
-              <td>Legales <br />Promocionales</td>
-            </tr>
-          </table>
+      <div class="container">
+        <div class="row filaFooter">
+          <div class="col">
+            <table class="TablaFormulario">
+              <tr>
+                <th>Acerca de SIDECOM</th>
+              </tr>
+              <tr>
+                <td>Nuestra Historia</td>
+              </tr>
+              <tr>
+                <td>Nuestros Valores</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col">
+            <table class="TablaFormulario">
+              <tr>
+                <th>DELIVERY</th>
+              </tr>
+              <tr>
+                <td>Tiempos y Costos de Envio</td>
+              </tr>
+              <tr>
+                <td>Cambios y Devoluciones</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col">
+            <table class="TablaFormulario">
+              <tr>
+                <th>Servicio al Cliente</th>
+              </tr>
+              <tr>
+                <td>Contactanos</td>
+              </tr>
+              <tr>
+                <td>Comprobantes Electrónicos</td>
+              </tr>
+              <tr>
+                <td>Legales <br />Promocionales</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </div>

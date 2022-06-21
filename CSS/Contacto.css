@@ -2,22 +2,7 @@
   margin: 0px;
   padding: 0px;
 }
-.grilla {
-  display: grid;
-  grid-template-columns: 0.2fr 2.6fr 0.2fr;
-  /* grid-template-rows: 0.4fr 1.6fr 1fr 1fr; */
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "header header header"
-    ". Formulario ."
-    ". Formulario ."
-    "Footer Footer Footer";
-}
 
-.header {
-  grid-area: header;
-}
 .Logotipo {
   width: 50px;
   margin: 0 auto;
@@ -27,7 +12,7 @@
 }
 .Opciones {
   display: flex;
-  background-color: rgb(125, 137, 239);
+  background-color: rgb(45, 35, 120);
   color: aliceblue;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -46,11 +31,19 @@
 
 .Opciones a:hover {
   /* cuando pasa el mouse por encima */
-  color: rgb(255, 255, 255);
+  color: rgb(239, 243, 8);
   font-weight: 400;
 }
-.Formulario {
-  grid-area: Formulario;
+.Opciones a:visited {
+  /* cuando pasa el mouse por encima */
+  color: rgb(245, 245, 245);
+  font-weight: 400;
+}
+
+.Formulario{
+  display: flex;
+  flex-direction: column;
+  align-items: center
 }
 .Formulario p{
   display: flex;
@@ -61,6 +54,12 @@
 
 .Formulario label{
   margin-right: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Formulario h4, h2{
+  font-family: 'Times New Roman', Times, serif;
+  overflow:hidden;
 }
 
 .form input {
@@ -107,65 +106,47 @@
 }
 
 .Footer {
-  grid-area: Footer;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: flex-start;
   padding-top: 10px;
-  background-color: rgb(144, 251, 251);
-
+  /* asigna el keyframe */
+  font-family: 'Times New Roman', Times, serif;
 }
 .Footer div {
-  padding: 15px;
+  padding: 8px ;
 }
-.card{
-  height: 20px;
+.row{
+  align-items: center;
 }
-.card-body{
-  flex: 1 0 0%;
-}
-.card-group{
-  width: 100%;
+.TablaFormulario{
+  background-color: rgb(65, 62, 162);
+  color: aliceblue;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 15px 0px;
+  border-radius: 10px;
 }
 .relative{
   margin-bottom: 15px;
   width: 200px;
 }
 
-@media (max-width: 864px){
-  .Opciones a {
-    padding: 5px;
-  }
-  .relative{
-    margin-bottom: 25px;
-  }
+/* Pantallas extra pequeñas */
+@media (max-width: 576px){
+  
 }
-/* Estilos Tablet */
-@media (max-width: 768px) {
-  .Footer{
-    background-color: blanchedalmond;
-  }
+/* Pantallas pequeñas(_sm) */
+@media (min-width: 576px) {
+  
 }
-/* Estilos Deskop */
-@media (min-width: 1024px){
-  .relative{
-    margin-bottom: 15px;
-  }
-  .Opciones a:hover {
-    /* cuando pasa el mouse por encima */
-    color: rgb(247, 12, 200);
-    font-weight: 400;
-  }
-}
+/* Pantallas Medianas(md) */
+@media (min-width: 768px){
 
-@media (max-width: 420px){
-  .Opciones a {
-    padding: 10px;
-  }
-  .Opciones a:hover {
-    /* cuando pasa el mouse por encima */
-    color: rgb(247, 12, 12);
-    font-weight: 400;
-  }
+}
+/* Pantallas Grandes(lg) */
+@media (min-width: 992px){
+  
+}
+/* Pantallas Extra Largas(xl) */
+@media (min-width: 992px){
+  
 }
