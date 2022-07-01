@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+// el primero siempre afecta primero
+@import "./variables/colores";
+@import "./variables/mixim";
+@import "./variables/extends";
+@import "./variables/tipografias";
+@import "./secciones/header";
+@import "./secciones/main";
+@import "./secciones/footer";
+@import "./secciones/Clasificaciones";
+@import "./secciones/Contacto";

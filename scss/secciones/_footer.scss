@@ -1,0 +1,66 @@
+// FOOTER
+
+.Footer {
+    padding-top: 10px;
+    /* asigna el keyframe */
+    font-family: 'Times New Roman', Times, serif;
+    div {
+        padding: 8px ;
+      }
+  }
+  .row{
+    align-items: center;
+  }
+  .TablaFormulario{
+    @extend %estiloParrafoFooter;
+  }
+
+  /* Pantallas extra pequeñas */
+  @media (max-width: 576px){
+
+  .TablaFormulario {
+    background-color: rgb(65, 62, 162);
+    color: aliceblue;
+    display: flex;
+    align-content: center;
+    padding: 2px 74px;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+  }
+  }
+  /* Pantallas pequeñas(_sm) */
+  @media (min-width: 576px) {
+  .TablaFormulario {
+    background-color: rgb(65, 62, 162);
+    color: aliceblue;
+    display: flex;
+    align-content: center;
+    padding: 2px 74px;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  }
+  /* Pantallas Medianas(md) */
+  @media (min-width: 768px){
+  }
+  /* Pantallas Grandes(lg) */
+  @media (min-width: 992px){
+
+  .TablaFormulario {
+    padding: 7px 111px;
+  }
+  }
+  /* Pantallas Extra Largas(xl) */
+  @media (min-width: 992px){
+
+  .TablaFormulario {
+    padding: 7px 111px;
+  }
+  }

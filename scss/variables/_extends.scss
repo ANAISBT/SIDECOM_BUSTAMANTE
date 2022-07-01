@@ -1,0 +1,23 @@
+%estilosParrafoServicios2{
+    font-size: 13px;
+    padding: 11px; 
+    text-align: center;
+}
+
+%estiloParrafoFooter{
+    background-color: #413ea2;
+    color: aliceblue;
+    display: flex;
+    align-content: center;
+    padding: 2px 74px;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+%mediaUtilesElem{
+    height: 361px;
+      width:394px;
+}

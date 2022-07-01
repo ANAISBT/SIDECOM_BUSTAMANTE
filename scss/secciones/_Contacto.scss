@@ -1,0 +1,80 @@
+//MAIN CONTACTO
+.Formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+      }
+      label{
+        margin-right: 15px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      h4, h2{
+        font-family: 'Times New Roman', Times, serif;
+        overflow:hidden;
+      }
+  }
+  
+  .form 
+  {input {
+    height: 2.5rem;
+    width: 250px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+    &:focus {
+        /* al hacerlo click en el formulario, solo funciona en los input */
+        width: 300px;
+        transition: 2s;
+        background-color: white;
+        margin: 15px;
+        /* para que se acomode al tamaño dicho por los dos lados */
+      }
+  }
+  textarea{
+    text-align: center;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+    &:focus {
+        /* al hacerlo click en el formulario, solo funciona en los input */
+        width: 300px;
+        transition: 2s;
+        background-color: white;
+        margin: 15px;
+        /* para que se acomode al tamaño dicho por los dos lados */
+      }
+  }
+}
+  .form input[type="submit"] {
+    transform: skew(-10deg);
+    transition: 2s;
+    &:hover {
+        background-color: black;
+        color: aliceblue;
+        transform: scale(1.2);
+      }
+  }
+  
+  .relative{
+    margin-bottom: 15px;
+    width: 200px;
+  }
+  .shadow{
+    box-shadow: 0px 10px 25px -1px rgba(48, 48, 48, 0.61);
+    background-color: whitesmoke;   
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 2rem;
+  }
+  /* Pantallas pequeñas(_sm) */
+  @media (min-width: 576px) {
+.shadow{
+    margin: 20px;
+  }
+  }

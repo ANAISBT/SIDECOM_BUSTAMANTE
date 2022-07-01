@@ -1,0 +1,184 @@
+// MAIN
+
+.carousel-item {
+img{
+    height: 400px;
+  }
+}
+.Servicios {
+    margin: 20px 0px 10px 0px;
+    h2{
+        animation-duration: 1s; 
+      }
+  }
+  .servicios2{
+    @extend %estilosParrafoServicios2;
+  }
+  .CuadrosServicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .ItemServicios {
+    @include fontstyle($colorItem);
+    width: 300px;
+    height: 70px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .block-Escolar{
+    padding:0 12px;
+    width: 100%;
+  }
+  .esc-sm-col-8 {
+    img{
+    height:200px;
+  }
+    }
+  .esc-sm-col-4{
+    margin: 0 5px;
+    background-color:rgb(238, 238, 238);
+    img{
+        height:400px;
+      }
+  }
+  .separador {
+    img{
+    max-width: 100%;
+  }
+    }
+  .casa{
+   font-size: 15px;
+   padding: 11px;
+  }
+  .Izipay{
+    font-size: 13px;
+    padding: 11px;
+  }
+  .Atencion{
+    font-size: 20px;
+    padding: 16px;
+  }
+  
+  .Ofertas {
+    margin: 20px 0px 10px 0px;
+  }
+  
+  .esc-row{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  
+  .CuadrosOfertas {
+    div {
+    &:hover {
+    transform: scale(1.2);
+    padding: 10px;
+  }
+}
+}
+  
+.ItemOfertas {
+    background-color: rgb(15, 59, 233);
+    width: 90%;
+    height: 60px;
+  }
+
+/* Pantallas extra pequeñas */
+@media (max-width: 576px){
+
+    .ItemServicios {
+      margin: 10px;
+    }
+    .carousel-item {
+        img{
+      height: 300px;
+      width: 250px;
+    }}
+    .esc-row{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-content: center;
+      align-items: center;
+      margin-top: 0px;
+      margin:15px;
+    }
+    .esc-col-6 {
+      margin:10px;
+    }
+
+    .esc-sm-col-4 {
+        img {
+      height: 282px;
+    }
+    }
+  .ark{
+    margin-top: 15px;
+  }
+  .mama{
+    margin-top: 15px;
+  }
+  }
+  /* Pantallas pequeñas(_sm) */
+  @media (min-width: 576px) {
+    .ItemServicios {
+      margin: 10px;
+    }
+    .carousel-item {
+        img{
+      height: 300px;
+      width: 250px;
+    }
+}
+    .esc-row{
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      align-items: center;
+      margin-top: 0px;
+      margin:15px;
+    }
+    .esc-col-6 {
+      margin:10px;
+    }
+    .esc-sm-col-4 {
+        img {
+      height: 282px;
+    }
+    }
+  .ark{
+    margin-top: 15px;
+  }
+  .mama{
+    margin-top: 15px;
+  }
+//   CONTACTO
+.shadow{
+    margin: 20px;
+  }
+  }
+  /* Pantallas Medianas(md) */
+  @media (min-width: 768px){
+
+  }
+  /* Pantallas Grandes(lg) */
+  @media (min-width: 992px){
+
+  .ItemServicios {
+    margin: 19px;
+  }
+
+  }
+  /* Pantallas Extra Largas(xl) */
+  @media (min-width: 992px){
+
+  .ItemServicios {
+    margin: 19px;
+  }
+
+  }
