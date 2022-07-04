@@ -230,7 +230,7 @@
   .utilesElem div {
     background-color: #f0f0f0; }
     .utilesElem div:hover {
-      background-color: aqua;
+      background-color: #e2e2e2;
       transform: scale(1.05); }
 
 .Filtros {
