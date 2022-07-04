@@ -14,11 +14,12 @@
    flex-wrap: wrap;
    justify-content: center;
    div{
-    background-color: aqua;
-    height: 300px;
-    width:250px;
-    margin: 15px 5px;
-  }
+    background-color: $color4;
+    &:hover{
+      background-color: aqua;
+      transform: scale(1.05);
+    }
+    }
   }
   
   .Filtros{

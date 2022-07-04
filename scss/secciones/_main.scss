@@ -24,7 +24,9 @@ img{
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  
+  .Descrip_Product{
+    font-family: $font1;
+  }
   .ItemServicios {
     @include fontstyle($colorItem);
     width: 300px;
