@@ -13,6 +13,10 @@ img{
   }
   .servicios2{
     @extend %estilosParrafoServicios2;
+    font-family: $font6;
+  }
+  .Atencion{
+    font-family: $font6;
   }
   .CuadrosServicios {
     display: flex;
@@ -90,7 +94,6 @@ img{
 
 /* Pantallas extra pequeñas */
 @media (max-width: 576px){
-
     .ItemServicios {
       margin: 10px;
     }
@@ -123,62 +126,23 @@ img{
   .mama{
     margin-top: 15px;
   }
+  //   CONTACTO
+  .shadow{
+  margin: 20px;
   }
-  /* Pantallas pequeñas(_sm) */
-  @media (min-width: 576px) {
-    .ItemServicios {
-      margin: 10px;
-    }
-    .carousel-item {
-        img{
-      height: 300px;
-      width: 250px;
-    }
 }
-    .esc-row{
-      display: flex;
-      justify-content: space-around;
-      align-content: center;
-      align-items: center;
-      margin-top: 0px;
-      margin:15px;
-    }
-    .esc-col-6 {
-      margin:10px;
-    }
-    .esc-sm-col-4 {
-        img {
-      height: 282px;
-    }
-    }
-  .ark{
-    margin-top: 15px;
-  }
-  .mama{
-    margin-top: 15px;
-  }
-//   CONTACTO
-.shadow{
-    margin: 20px;
-  }
-  }
   /* Pantallas Medianas(md) */
-  @media (min-width: 768px){
-
+  @media (max-width: 768px){
+    .esc-sm-col-4{
+      display:none;
+    }
   }
   /* Pantallas Grandes(lg) */
-  @media (min-width: 992px){
-
+  @media (max-width: 992px){
+    .esc-sm-col-4{
+      display:none;
+    }
   .ItemServicios {
-    margin: 19px;
+    margin: 10px 30px;
   }
-
-  }
-  /* Pantallas Extra Largas(xl) */
-  @media (min-width: 992px){
-
-  .ItemServicios {
-    margin: 19px;
-  }
-
   }

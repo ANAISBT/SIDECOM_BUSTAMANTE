@@ -3,12 +3,12 @@
 .Footer {
     padding-top: 10px;
     /* asigna el keyframe */
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $font4;
     div {
         padding: 8px ;
       }
   }
-  .row{
+  .filaFooter{
     align-items: center;
   }
   .TablaFormulario{
@@ -17,35 +17,9 @@
 
   /* Pantallas extra pequeñas */
   @media (max-width: 576px){
-
-  .TablaFormulario {
-    background-color: rgb(65, 62, 162);
-    color: aliceblue;
-    display: flex;
-    align-content: center;
-    padding: 2px 74px;
-    border-radius: 10px;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-
-  }
   }
   /* Pantallas pequeñas(_sm) */
   @media (min-width: 576px) {
-  .TablaFormulario {
-    background-color: rgb(65, 62, 162);
-    color: aliceblue;
-    display: flex;
-    align-content: center;
-    padding: 2px 74px;
-    border-radius: 10px;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
   }
   /* Pantallas Medianas(md) */
   @media (min-width: 768px){

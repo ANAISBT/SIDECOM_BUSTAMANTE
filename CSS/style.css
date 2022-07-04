@@ -3,13 +3,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap");
 * {
   margin: 0;
   padding: 0; }
 
 .servicios2 {
-  font-size: 13px;
-  padding: 11px;
+  font-size: 15px;
+  padding-top: 10px;
   text-align: center; }
 
 .TablaFormulario {
@@ -17,7 +19,7 @@
   color: aliceblue;
   display: flex;
   align-content: center;
-  padding: 2px 74px;
+  padding: 10px 50px;
   border-radius: 10px;
   align-items: center;
   flex-direction: column;
@@ -44,7 +46,8 @@
     /* sacar el subrayado */
     text-decoration: none;
     text-transform: uppercase;
-    color: black; }
+    color: black;
+    font-family: "PT Serif", serif; }
     .Opciones a:hover {
       /* cuando pasa el mouse por encima */
       color: #eff308;
@@ -57,32 +60,20 @@
 .titleSidecom {
   text-decoration: none;
   color: #d43333;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "PT Serif", serif;
   margin-right: 3rem; }
 
 /* Pantallas extra pequeñas */
 @media (max-width: 576px) {
+  .Barra {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0; }
   .Opciones {
-    justify-content: center;
-    width: 100%; }
-    .Opciones a {
-      font-size: 13px;
-      margin-right: 5px; } }
-
-/* Pantallas pequeñas(_sm) */
-@media (min-width: 576px) {
-  .Opciones a {
-    font-size: 13px;
-    margin-right: 5px; } }
+    display: none; } }
 
 /* Pantallas Medianas(md) */
-/* Pantallas Grandes(lg) */
-@media (min-width: 992px) {
-  .Opciones a {
-    margin-right: 54px; } }
-
-/* Pantallas Extra Largas(xl) */
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .Opciones a {
     margin-right: 54px; } }
 
@@ -93,6 +84,12 @@
   margin: 20px 0px 10px 0px; }
   .Servicios h2 {
     animation-duration: 1s; }
+
+.servicios2 {
+  font-family: "PT Serif", serif; }
+
+.Atencion {
+  font-family: "PT Serif", serif; }
 
 .CuadrosServicios {
   display: flex;
@@ -175,82 +172,34 @@
   .ark {
     margin-top: 15px; }
   .mama {
-    margin-top: 15px; } }
-
-/* Pantallas pequeñas(_sm) */
-@media (min-width: 576px) {
-  .ItemServicios {
-    margin: 10px; }
-  .carousel-item img {
-    height: 300px;
-    width: 250px; }
-  .esc-row {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    margin-top: 0px;
-    margin: 15px; }
-  .esc-col-6 {
-    margin: 10px; }
-  .esc-sm-col-4 img {
-    height: 282px; }
-  .ark {
-    margin-top: 15px; }
-  .mama {
     margin-top: 15px; }
   .shadow {
     margin: 20px; } }
 
 /* Pantallas Medianas(md) */
-/* Pantallas Grandes(lg) */
-@media (min-width: 992px) {
-  .ItemServicios {
-    margin: 19px; } }
+@media (max-width: 768px) {
+  .esc-sm-col-4 {
+    display: none; } }
 
-/* Pantallas Extra Largas(xl) */
-@media (min-width: 992px) {
+/* Pantallas Grandes(lg) */
+@media (max-width: 992px) {
+  .esc-sm-col-4 {
+    display: none; }
   .ItemServicios {
-    margin: 19px; } }
+    margin: 10px 30px; } }
 
 .Footer {
   padding-top: 10px;
   /* asigna el keyframe */
-  font-family: 'Times New Roman', Times, serif; }
+  font-family: "PT Serif", serif; }
   .Footer div {
     padding: 8px; }
 
-.row {
+.filaFooter {
   align-items: center; }
 
 /* Pantallas extra pequeñas */
-@media (max-width: 576px) {
-  .TablaFormulario {
-    background-color: #413ea2;
-    color: aliceblue;
-    display: flex;
-    align-content: center;
-    padding: 2px 74px;
-    border-radius: 10px;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center; } }
-
 /* Pantallas pequeñas(_sm) */
-@media (min-width: 576px) {
-  .TablaFormulario {
-    background-color: #413ea2;
-    color: aliceblue;
-    display: flex;
-    align-content: center;
-    padding: 2px 74px;
-    border-radius: 10px;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center; } }
-
 /* Pantallas Medianas(md) */
 /* Pantallas Grandes(lg) */
 @media (min-width: 992px) {
@@ -265,7 +214,8 @@
 .subTitle {
   text-align: center;
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  font-family: "PT Serif", serif; }
 
 .Utiles {
   padding: 0 25px; }
@@ -273,50 +223,23 @@
 .utilesElem {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: center; }
   .utilesElem div {
     background-color: aqua;
-    height: 350px;
-    width: 200px;
+    height: 300px;
+    width: 250px;
     margin: 15px 5px; }
 
 .Filtros {
   display: flex;
-  align-items: stretch;
   flex-direction: column;
+  align-items: stretch;
   flex-wrap: nowrap;
   justify-content: flex-start; }
 
 /* Pantallas extra pequeñas */
-@media (max-width: 576px) {
-  .utilesElem div {
-    height: 361px;
-    width: 374px; } }
-
-/* Pantallas pequeñas(_sm) */
-@media (min-width: 576px) {
-  .utilesElem div {
-    height: 361px;
-    width: 374px; } }
-
 /* Pantallas Medianas(md) */
-@media (min-width: 768px) {
-  .utilesElem div {
-    height: 361px;
-    width: 394px; } }
-
-/* Pantallas Grandes(lg) */
-@media (min-width: 992px) {
-  .utilesElem div {
-    height: 361px;
-    width: 414px; } }
-
 /* Pantallas Extra Largas(xl) */
-@media (min-width: 992px) {
-  .utilesElem div {
-    height: 361px;
-    width: 474px; } }
-
 .Formulario {
   display: flex;
   flex-direction: column;

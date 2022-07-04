@@ -2,6 +2,7 @@
     text-align: center;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    font-family: $font4;
   }
 
   .Utiles{
@@ -11,57 +12,33 @@
   .utilesElem{
     display: flex;
    flex-wrap: wrap;
-   justify-content: space-around;
+   justify-content: center;
    div{
     background-color: aqua;
-    height: 350px;
-    width:200px;
+    height: 300px;
+    width:250px;
     margin: 15px 5px;
   }
   }
   
   .Filtros{
     display: flex;
-    align-items: stretch;
     flex-direction: column;
+    align-items: stretch;
     flex-wrap: nowrap;
     justify-content: flex-start;
-  
   }
 
 /* Pantallas extra pequeñas */
 @media (max-width: 576px){
-    .utilesElem div{
-      height: 361px;
-      width:374px;
-    }
-  }
-  /* Pantallas pequeñas(_sm) */
-  @media (min-width: 576px) {
-    .utilesElem div{
-      height: 361px;
-      width:374px;
-    }
+    
   }
   /* Pantallas Medianas(md) */
-  @media (min-width: 768px){
-    .utilesElem div{
-      height: 361px;
-      width:394px;
-    }
-  }
-  /* Pantallas Grandes(lg) */
-  @media (min-width: 992px){
-    .utilesElem div{
-      height: 361px;
-      width:414px;
-    }
+  @media (max-width: 768px){
+    
   }
   /* Pantallas Extra Largas(xl) */
-  @media (min-width: 992px){
-    .utilesElem div{
-      height: 361px;
-      width:474px;
-    }
+  @media (max-width: 992px){
+    
   
   }
