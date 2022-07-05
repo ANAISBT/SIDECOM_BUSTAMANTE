@@ -115,12 +115,6 @@
 .esc-sm-col-8 img {
   height: 200px; }
 
-.esc-sm-col-4 {
-  margin: 0 5px;
-  background-color: #eeeeee; }
-  .esc-sm-col-4 img {
-    height: 400px; }
-
 .separador img {
   max-width: 100%; }
 
@@ -142,7 +136,8 @@
 .esc-row {
   display: flex;
   justify-content: space-around;
-  align-content: space-around; }
+  align-content: space-around;
+  flex-wrap: wrap; }
 
 .CuadrosOfertas div:hover {
   transform: scale(1.2);
@@ -180,14 +175,8 @@
     margin: 20px; } }
 
 /* Pantallas Medianas(md) */
-@media (max-width: 768px) {
-  .esc-sm-col-4 {
-    display: none; } }
-
 /* Pantallas Grandes(lg) */
 @media (max-width: 992px) {
-  .esc-sm-col-4 {
-    display: none; }
   .ItemServicios {
     margin: 10px 30px; } }
 
@@ -232,6 +221,15 @@
     .utilesElem div:hover {
       background-color: #e2e2e2;
       transform: scale(1.05); }
+
+.propItem {
+  font-size: 0.85rem;
+  text-align: left;
+  font-family: "Playfair Display", serif; }
+
+.card__Precio {
+  text-align: center;
+  font-family: "Playfair Display", serif; }
 
 .Filtros {
   display: flex;

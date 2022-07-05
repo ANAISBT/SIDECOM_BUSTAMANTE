@@ -21,7 +21,15 @@
     }
     }
   }
-  
+  .propItem{
+    font-size:0.85rem;
+    text-align: left;
+    font-family: "Playfair Display", serif;
+  }
+  .card__Precio{
+    text-align: center;
+    font-family: "Playfair Display", serif;
+  }
   .Filtros{
     display: flex;
     flex-direction: column;
