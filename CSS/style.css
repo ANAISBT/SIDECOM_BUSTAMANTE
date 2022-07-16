@@ -143,8 +143,8 @@
 
 .esc-row {
   display: flex;
-  justify-content: space-around;
-  align-content: space-around;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap; }
 
 .CuadrosOfertas div:hover {
@@ -228,7 +228,7 @@
 
 @media (min-width: 992px) {
   .esc-sm-col-4 {
-    width: 33%; } }
+    width: 30%; } }
 
 .Footer {
   padding-top: 10px;
