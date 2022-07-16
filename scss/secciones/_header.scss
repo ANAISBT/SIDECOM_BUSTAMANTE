@@ -24,6 +24,7 @@
         text-transform: uppercase;
         color: rgb(0, 0, 0);
         font-family:$font4;
+        font-size: 14px;
         &:hover {
             /* cuando pasa el mouse por encima */
             color: rgb(239, 243, 8);
@@ -56,12 +57,14 @@
   }
   /* Pantallas Medianas(md) */
   @media (max-width: 768px){
+
   }
   @media (max-width: 992px){
     .Opciones{
 
       a {
         margin-right: 54px;
+        font-size: 20px;
     }
     }
   }

@@ -15,26 +15,9 @@
     @extend %estiloParrafoFooter;
   }
 
-  /* Pantallas extra pequeñas */
-  @media (max-width: 576px){
-  }
-  /* Pantallas pequeñas(_sm) */
-  @media (min-width: 576px) {
-  }
-  /* Pantallas Medianas(md) */
-  @media (min-width: 768px){
-  }
-  /* Pantallas Grandes(lg) */
-  @media (min-width: 992px){
+  @media (max-width: 992px){
 
-  .TablaFormulario {
-    padding: 7px 111px;
-  }
-  }
-  /* Pantallas Extra Largas(xl) */
-  @media (min-width: 992px){
-
-  .TablaFormulario {
-    padding: 7px 111px;
-  }
+    .TablaFormulario{
+      padding: 20px 12px;
+    }
   }

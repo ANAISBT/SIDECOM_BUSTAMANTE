@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0; }
 
-.servicios2 {
+.servicios2, .servicios3 {
   font-size: 15px;
   padding-top: 10px;
   text-align: center; }
@@ -47,7 +47,8 @@
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    font-family: "PT Serif", serif; }
+    font-family: "PT Serif", serif;
+    font-size: 14px; }
     .Opciones a:hover {
       /* cuando pasa el mouse por encima */
       color: #eff308;
@@ -75,7 +76,8 @@
 /* Pantallas Medianas(md) */
 @media (max-width: 992px) {
   .Opciones a {
-    margin-right: 54px; } }
+    margin-right: 54px;
+    font-size: 20px; } }
 
 .carousel-item img {
   height: 400px; }
@@ -86,6 +88,9 @@
     animation-duration: 1s; }
 
 .servicios2 {
+  font-family: "PT Serif", serif; }
+
+.servicios3 {
   font-family: "PT Serif", serif; }
 
 .Atencion {
@@ -117,6 +122,9 @@
 
 .separador img {
   max-width: 100%; }
+
+.Calculadora .Stamp .Pilot .Chocolate1 .Chocolate2 .Rosa {
+  width: 17rem; }
 
 .casa {
   font-size: 15px;
@@ -153,8 +161,7 @@
   .ItemServicios {
     margin: 10px; }
   .carousel-item img {
-    height: 300px;
-    width: 250px; }
+    height: 300px; }
   .esc-row {
     display: flex;
     flex-direction: column;
@@ -175,10 +182,53 @@
     margin: 20px; } }
 
 /* Pantallas Medianas(md) */
+@media (max-width: 768px) {
+  .ItemServicios {
+    width: 340px;
+    height: 80px; }
+  .carousel-item img {
+    height: 300px; }
+  .esc-col-6 {
+    margin: 10px; }
+  .esc-sm-col-4 img {
+    height: 400px; }
+  .servicios2 {
+    font-size: 20px; }
+  .servicios3 {
+    font-size: 17px;
+    padding-top: 14px; }
+  .Atencion {
+    font-size: 24px;
+    padding-top: 18px; }
+  .ark {
+    margin-top: 15px; }
+  .mama {
+    margin-top: 15px; }
+  .shadow {
+    margin: 20px; } }
+
 /* Pantallas Grandes(lg) */
 @media (max-width: 992px) {
   .ItemServicios {
-    margin: 10px 30px; } }
+    width: 340px;
+    height: 80px;
+    margin: 10px; }
+  .esc-col-6 {
+    margin: 10px; }
+  .esc-sm-col-4 img {
+    height: 400px; }
+  .servicios2 {
+    font-size: 20px; }
+  .servicios3 {
+    font-size: 17px;
+    padding-top: 14px; }
+  .Atencion {
+    font-size: 24px;
+    padding-top: 18px; } }
+
+@media (min-width: 992px) {
+  .esc-sm-col-4 {
+    width: 33%; } }
 
 .Footer {
   padding-top: 10px;
@@ -190,18 +240,9 @@
 .filaFooter {
   align-items: center; }
 
-/* Pantallas extra pequeñas */
-/* Pantallas pequeñas(_sm) */
-/* Pantallas Medianas(md) */
-/* Pantallas Grandes(lg) */
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .TablaFormulario {
-    padding: 7px 111px; } }
-
-/* Pantallas Extra Largas(xl) */
-@media (min-width: 992px) {
-  .TablaFormulario {
-    padding: 7px 111px; } }
+    padding: 20px 12px; } }
 
 .subTitle {
   text-align: center;
@@ -244,7 +285,8 @@
 .Formulario {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  margin-left: 20px;
+  margin-right: 20px; }
   .Formulario p {
     display: flex;
     flex-direction: row;
@@ -254,36 +296,43 @@
     margin-right: 15px;
     font-family: 'Times New Roman', Times, serif; }
   .Formulario h4, .Formulario h2 {
+    display: flex;
     font-family: 'Times New Roman', Times, serif;
-    overflow: hidden; }
+    overflow: hidden;
+    justify-content: center; }
 
-.form input {
-  height: 2.5rem;
-  width: 250px;
-  text-align: center;
-  border-radius: 15px;
-  background-color: antiquewhite;
-  margin-bottom: 10px; }
-  .form input:focus {
-    /* al hacerlo click en el formulario, solo funciona en los input */
-    width: 300px;
-    transition: 2s;
-    background-color: white;
-    margin: 15px;
-    /* para que se acomode al tamaño dicho por los dos lados */ }
-
-.form textarea {
-  text-align: center;
-  border-radius: 15px;
-  background-color: antiquewhite;
-  margin-bottom: 10px; }
-  .form textarea:focus {
-    /* al hacerlo click en el formulario, solo funciona en los input */
-    width: 300px;
-    transition: 2s;
-    background-color: white;
-    margin: 15px;
-    /* para que se acomode al tamaño dicho por los dos lados */ }
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .form input {
+    display: flex;
+    height: 2.5rem;
+    width: 250px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+    justify-content: center; }
+    .form input:focus {
+      /* al hacerlo click en el formulario, solo funciona en los input */
+      width: 300px;
+      transition: 2s;
+      background-color: white;
+      margin: 15px;
+      /* para que se acomode al tamaño dicho por los dos lados */ }
+  .form textarea {
+    text-align: center;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    margin-bottom: 10px; }
+    .form textarea:focus {
+      /* al hacerlo click en el formulario, solo funciona en los input */
+      width: 300px;
+      transition: 2s;
+      background-color: white;
+      margin: 15px;
+      /* para que se acomode al tamaño dicho por los dos lados */ }
 
 .form input[type="submit"] {
   transform: skew(-10deg);
@@ -307,4 +356,14 @@
 /* Pantallas pequeñas(_sm) */
 @media (min-width: 576px) {
   .shadow {
-    margin: 20px; } }
+    margin: 20px;
+    width: 80%; } }
+
+@media (max-width: 576px) {
+  .shadow {
+    margin: 0px; } }
+
+@media (min-width: 992px) {
+  .shadow {
+    margin-left: 20px;
+    margin-right: 20px; } }
